@@ -1,6 +1,12 @@
+# ICMDT
+
+[![contributions](https://img.shields.io/badge/Contributions-welcome-297D1E)](#contributing)[![pytorch](https://img.shields.io/badge/PyTorch-2.1-blue.svg)](https://pytorch.org/)
+
 This repo is the implementation of our paper. The code is based on Pytorch 2.1.1 and tested on Ubuntu 18.04, using an NVIDIA RTX 4060 GPU and 32 GB memory.  Once the paper is accepted, we will release all the source code. Follow the steps below to reproduce our experimental results.
 
-## 🛠️ Get started
+## Demo
+
+### 🛠️ Get started
 
 ### Set up a new virtual environment
 
@@ -45,11 +51,13 @@ The results of running WSiP:
 
 ![](pics/result_WSiP.png)
 
-From the above results, we can see that our model achieves **better performance than WSiP**. For convenience, we only provide a simple example here. For more comparative results, see the paper.
+:trophy: **SOTA performance**: From the above results, we can see that our model achieves better performance than WSiP. For convenience, we only provide a simple example here. For more comparative results, see the paper.
 
 ### Acknowledgements
 
 Part of our code is borrowed from:
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 [VideoMamba](https://github.com/OpenGVLab/VideoMamba)
 
@@ -64,3 +72,4 @@ Part of our code is borrowed from:
 [STDAN](https://github.com/xbchen82/stdan)
 
 We thank the authors for releasing their code and models.
+
