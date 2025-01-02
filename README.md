@@ -43,7 +43,7 @@ The following is a screenshot of the results of running ICMDT:
 
 The results of running WSiP:
 
-![](pics\result_WSiP.png)
+![](pics/result_WSiP.png)
 
 From the above results, we can see that our model achieves **better performance than WSiP**. For convenience, we only provide a simple example here. For more comparative results, see the paper.
 
