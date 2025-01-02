@@ -204,7 +204,7 @@ def maskedMSETest(y_pred, y_gt, mask):
     muY = y_pred[:, :, 1]
     x = y_gt[:, :, 0]
     y = y_gt[:, :, 1]
-    out = torch.pow(x - muX, 2) + t.pow(y - muY, 2)
+    out = torch.pow(x - muX, 2) + torch.pow(y - muY, 2)
     acc[:, :, 0] = out
     acc[:, :, 1] = out
     acc = acc * mask
