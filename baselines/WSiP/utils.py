@@ -6,9 +6,6 @@ import torch
 from scipy.optimize import curve_fit
 
 
-# ___________________________________________________________________________________________________________________________
-
-______________________________________________________________________________________________________________________________
 
 ## Quintic spline definition.
 # def quintic_spline(x, z, a, b, c, d, e):
@@ -207,13 +204,14 @@ def maskedMSETest(y_pred, y_gt, mask):
     muY = y_pred[:, :, 1]
     x = y_gt[:, :, 0]
     y = y_gt[:, :, 1]
-    out = torch.pow(x - muX, 2) + torch.pow(y - muY, 2)
+    out = torch.pow(x - muX, 2) + t.pow(y - muY, 2)
     acc[:, :, 0] = out
     acc[:, :, 1] = out
     acc = acc * mask
     lossVal = torch.sum(acc[:, :, 0], dim=1)
     counts = torch.sum(mask[:, :, 0], dim=1)
-    return lossVal, counts
+    loss = torch.sum(acc) / torch.sum(mask)
+    return lossVal, counts, loss
 
 
 def logsumexp(inputs, dim=None, keepdim=False):
